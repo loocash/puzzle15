@@ -1,0 +1,49 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  color: dimgray;
+  padding-top: 1em;
+}
+
+#board {
+  width: 240px;
+  height: 240px;
+  position: relative;
+  display: inline-block;
+}
+
+.tile {
+  background-color: cadetblue;
+  color: white;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  transition: transform 0.15s ease;
+
+  p {
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    user-select: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+#shuffle, #shuffle:hover, #shuffle:active {
+  color: dimgrey;
+  font-weight: bold;
+}
+
+#stats {
+  margin: 1em auto;
+  width: 224px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav {
+  margin: 1em 0;
+}
