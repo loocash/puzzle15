@@ -19,17 +19,17 @@ body {
   height: 50px;
   position: absolute;
   transition: transform 0.15s ease;
+}
 
-  p {
-    text-align: center;
-    vertical-align: middle;
-    font-weight: bold;
-    user-select: none;
-  }
+.tile:hover {
+  cursor: pointer;
+}
 
-  &:hover {
-    cursor: pointer;
-  }
+.tile p {
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  user-select: none;
 }
 
 #shuffle, #shuffle:hover, #shuffle:active {

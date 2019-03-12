@@ -1,6 +1,3 @@
-import './style.scss';
-import _ from 'lodash';
-
 const TILE_SIDE  = 50;
 const FREE_SPACE = 8;
 const OFFSET = FREE_SPACE+TILE_SIDE;
