@@ -18,7 +18,10 @@ body {
   width: 50px;
   height: 50px;
   position: absolute;
+  -webkit-transition: -webkit-transform 0.15s ease;
+  transition: -webkit-transform 0.15s ease;
   transition: transform 0.15s ease;
+  transition: transform 0.15s ease, -webkit-transform 0.15s ease;
 }
 
 .tile:hover {
@@ -29,7 +32,10 @@ body {
   text-align: center;
   vertical-align: middle;
   font-weight: bold;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 #shuffle, #shuffle:hover, #shuffle:active {
@@ -40,8 +46,12 @@ body {
 #stats {
   margin: 1em auto;
   width: 224px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #nav {
